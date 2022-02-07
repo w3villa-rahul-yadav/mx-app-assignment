@@ -1,28 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
 body {
     font-family: Arial, sans-serif;
   }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .banner{
     background-color: rgb(101, 83, 224);
     background-image: radial-gradient(rgb(176, 168, 235), rgb(101, 83, 224));
 }
-
+.logo{
+    font-size:xx-large;
+}
 .navList{
     list-style-type:none;
     text-decoration: none;
     
 }
-/* .navList > li{
-    padding: 0 20px 0 20px;
-} */
 .navList > li a{
     color: white;
     font-weight: 600;
@@ -34,8 +32,14 @@ body {
     padding-bottom: 10px;
     
 }
-
-
+/* Common classes */
+.pd_100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sectionHeading{
+    color: #252b33;
+}
 .downloadBtn{
     border-radius: 28px;
 }
@@ -45,20 +49,21 @@ body {
 .aboutFont{
     border-bottom: 3px solid rgb(101, 83, 224);
 }
-.banner2{
-    /* line-height: 1.5; */
+.aboutFont2{
+    border-bottom: 3px solid white;
 }
+
 .aboutPara{
     line-height: 2;
 }
 .aboutText{
-    color: rgb(95, 90, 90);
+    color: #4c4d4d;
 }
-.banner3{
-    background-color: rgb(78, 78, 78);
+.appGrow{
+    background-color: #404346;
     line-height: 3;
 }
-.banner5{
+.appScreen{
     background-color: rgb(245, 238, 238);
 }
 .userImg{
@@ -69,7 +74,10 @@ body {
 .users{
     box-shadow: 1px 1px 20px  #ece9e9;
 }
-.banner8{
+.appPromo{
+    background-color: #575a5c;
+}
+.pricing{
     background-color: rgb(245, 238, 238);
 }
 .monthly{
@@ -97,14 +105,14 @@ body {
     border-radius: 50%;
     background-color: rgb(225, 233, 245);
 }
-.banner9{
+.getApp{
     background-color: rgb(101, 83, 224);
 }
 .divInBanner9{
     width: 100%;
 }
 .badgeGoogle{
-    max-width: 30%;
+    max-width: 29%;
     min-width: 23%;
     height: auto;
 }
@@ -125,10 +133,6 @@ body {
     outline: none;
     transition: 0.4s;
   }
-  
-  .active, .accordion:hover {
-  }
-  
   .accordion:after {
     content: '\2304';
     font-weight: bold;
@@ -150,7 +154,7 @@ body {
 
   /* End of Faq */
 
-  .banner11{
+  .appSubscribe{
     background-color: rgb(101, 83, 224);
 }
 
@@ -183,7 +187,7 @@ body {
     background-color: rgba(243, 242, 247,.5);
 }
 
-.banner13{
+.appFooter{
     background-color: black;
 }
 .footerName{

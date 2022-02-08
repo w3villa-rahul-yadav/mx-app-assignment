@@ -9,6 +9,14 @@ html{
 body {
     font-family: Arial, sans-serif;
   }
+
+.menuBar{
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+    background-color: rgb(101, 83, 224);
+}
 .banner{
     background-color: rgb(101, 83, 224);
     background-image: radial-gradient(rgb(176, 168, 235), rgb(101, 83, 224));
@@ -19,6 +27,8 @@ body {
 .navList{
     list-style-type:none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
     
 }
 .navList > li a{
@@ -33,7 +43,7 @@ body {
     
 }
 /* Common classes */
-.pd_100{
+.ptb_100{
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -68,11 +78,12 @@ body {
 }
 .userImg{
     width: 12%;
-    height: 25%;
+    height: auto;
     border-radius: 50%;
 }
 .users{
     box-shadow: 1px 1px 20px  #ece9e9;
+    
 }
 .appPromo{
     background-color: #575a5c;
@@ -93,14 +104,14 @@ body {
 .startNow:hover{
     background-color: rgb(101, 83, 224);
 }
-.badgeImg{
+/* .badgeImg{
     max-width: 50%;
     height: 50%;
-}
-.badgeImg2{
+} */
+/* .badgeImg2{
     max-width: 46%;
     max-height: 20%;
-}
+} */
 .appsIcon{
     border-radius: 50%;
     background-color: rgb(225, 233, 245);
@@ -108,9 +119,7 @@ body {
 .getApp{
     background-color: rgb(101, 83, 224);
 }
-.divInBanner9{
-    width: 100%;
-}
+
 .badgeGoogle{
     max-width: 29%;
     min-width: 23%;
@@ -164,6 +173,7 @@ body {
 }
 .subBtn{
     border-radius: 0 24px 24px 0;
+    background-color: #343a41;
 }
 .subInput{
     outline: none;

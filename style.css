@@ -11,13 +11,15 @@ body {
   }
 
 .menuBar{
-    /* position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
-    left: 0; */
+    left: 0;
+    z-index: 9999;
     background-color: rgb(101, 83, 224);
 }
 .banner{
+    margin-top: 80px;
     background-color: rgb(101, 83, 224);
     background-image: radial-gradient(rgb(176, 168, 235), rgb(101, 83, 224));
 }
@@ -42,16 +44,54 @@ body {
     padding-bottom: 10px;
     
 }
+h3,h2{
+    color:#4c4d4d ;
+    font-weight: 500;
+}
 /* Common classes */
 .ptb_100{
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .sectionHeading{
-    color: #252b33;
+    color: #4c4d4d;
+    position: relative;
+}
+.sectionHeading::after{
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(101, 83, 224);
+}
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
 }
 .downloadBtn{
-    border-radius: 28px;
+    border-radius: 32px;
+}
+.iconsize{
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+.playButton{
+    font-size: 50px;
+    padding-bottom: 15px;
 }
 .phoneImg{
     margin-bottom: -26px;
@@ -77,15 +117,16 @@ body {
     background-color: rgb(245, 238, 238);
 }
 .userImg{
-    width: 12%;
-    height: auto;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    object-fit: cover;
 }
 .users{
     box-shadow: 1px 1px 20px  #ece9e9;
     
 }
-.appPromo{
+.grayBG{
     background-color: #575a5c;
 }
 .pricing{
@@ -99,21 +140,21 @@ body {
 .startNow{
     border-radius: 55px;
     color: white;
-    background-color: gray;
+    background-color: #575a5c;
 }
 .startNow:hover{
     background-color: rgb(101, 83, 224);
 }
-/* .badgeImg{
-    max-width: 50%;
-    height: 50%;
-} */
-/* .badgeImg2{
-    max-width: 46%;
-    max-height: 20%;
-} */
+
 .appsIcon{
-    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4c4d4d;
     background-color: rgb(225, 233, 245);
 }
 .getApp{
@@ -202,6 +243,10 @@ body {
 }
 .footerName{
    color: rgb(101, 83, 224);
+}
+.addressHeading{
+    font-size: 22px;
+    color: 4c4d4d;
 }
 
 @media only screen and (max-width:680px) {

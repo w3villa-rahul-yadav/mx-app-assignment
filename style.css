@@ -241,6 +241,10 @@ h3,h2{
 .appFooter{
     background-color: black;
 }
+.appFooter a{
+    text-decoration: none;
+    color: white;
+}
 .footerName{
    color: rgb(101, 83, 224);
 }
